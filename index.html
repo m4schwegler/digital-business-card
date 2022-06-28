@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact@Max Mustermann</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico">
+    <meta name="description" content="Contactpage - Max Mustermann">
+    <meta name="keywords" content="contact, max, mustermann" />
+    <meta name="author" content="Max Mustermann">
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+
+
+<body>
+    <div class="image-container">
+
+        <div class="w3-margin">
+            <label class="switch">
+                <input type="checkbox" onchange="updateToggle(this)">
+                <div class="slider round">
+                    <span class="privat">Privat</span>
+                    <span class="work">Work</span>
+                </div>
+            </label>
+        </div>
+
+        <div id="profilPicWork">
+            <img src="assets/img/profile-picture-business.png" class="lt-margin lt-profil-picture" alt="Max Mustermann">
+        </div>
+        <div id="profilPicPrivat">
+            <img src="assets/img/profile-picture-privat.png" class="lt-margin lt-profil-picture" alt="Max Mustermann">
+        </div>
+
+        <div class="w3-margin">
+            <h2 class="w3-text"><strong>Max Mustermann</strong></h2>
+            <div>
+                <p>Web Developer @ Fantasy GmbH</p>
+            </div>
+        </div>
+
+        <div id="socialIconsWork" class="w3-container w3-large social-icons">
+            <i class="fa fa-website w3-hover-opacity"></i>
+            <a href="https://www.linkedin.com/in/max-mustermann78787/" target="_blank"><i
+                    class="fa fa-linkedin fa-2x lt-icon-work" aria-hidden="true"></i></a>
+            <a href="mailto:max.mustermann@fantasy.com" target="_blank"><i class="fa fa-envelope-o fa-2x lt-icon-work"
+                    aria-hidden="true"></i></a>
+            <a href="tel:0123456789" target="_blank"><i class="fa fa-phone fa-2x lt-icon-work"
+                    aria-hidden="true"></i></a>
+        </div>
+
+        <div id="socialIconsPrivat" class="w3-container w3-large social-icons">
+            <i class="fa fa-website w3-hover-opacity"></i>
+            <a href="https://www.instagram.com/maxschwegler/?hl=de" target="_blank"><i
+                class="fa fa-instagram fa-2x lt-icon" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/maximilian-schwegler/" target="_blank"><i
+                    class="fa fa-linkedin fa-2x lt-icon" aria-hidden="true"></i></a>
+            <a href="mailto:max_schwegler@icloud.com" target="_blank"><i class="fa fa-envelope-o fa-2x lt-icon"
+                    aria-hidden="true"></i></a>
+        </div>
+
+        <!-- Add vCard Data to Assets/data -->
+        <div class="links-container" id="btnWork">
+            <div class="btn btn-work">
+                <a href="assets/data/contact.vcf" class="save-contact">Kontakt speichern</a>
+            </div>
+        </div>
+        <div class="links-container" id="btnPrivat">
+            <div class="btn btn-privat">
+                <a href="assets/data/contact.vcf" class="save-contact">Kontakt speichern</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
